@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "freecamlite",
+  "version": "${version}",
+  "name": "Freecam Lite",
+  "description": "A lightweight detached flying camera. Toggle with a keybind, fly with WASD + Space/Shift, hold Sprint to speed up. Your player stays put while you look around. No GUI, no config screen.",
+  "authors": [
+    "you"
+  ],
+  "license": "CC0-1.0",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.freecamlite.FreecamClient"
+    ]
+  },
+  "mixins": [
+    "freecamlite.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.0",
+    "minecraft": "1.21.11",
+    "fabric-api": "*",
+    "java": ">=21"
+  }
+}
